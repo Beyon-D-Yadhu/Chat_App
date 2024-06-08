@@ -17,6 +17,8 @@ app.get('/api/chat',(req,res)=>{
     res.json({message:"Heello worlddddd"})
 })
 
+app.use(cors())
+
 app.listen(PORT,()=>{
     console.log(`server running on http://localhost:${PORT}`)
 })
